@@ -1,0 +1,65 @@
+/* ========================= */
+/* #1 Form                   */
+/* #2 Position               */
+/* #3 Margin & Padding       */
+/* #4 Self modifiers         */
+/* #5 Child modifiers        */
+/* #6 Text                   */
+/* #7 Animation              */
+/* ========================= */
+
+:root {
+    /* #4 Self modifiers */
+    background-color: #f9f8ff;
+
+    /* #6 Text */
+    font-family: system-ui;
+}
+
+* {
+    /* #1 Form */
+    box-sizing: border-box;
+}
+
+body {
+    /* #1 Form */
+    height: 100vh;
+    width: 100vw;
+
+    /* #3 Margin & Padding */
+    margin: 0;
+}
+
+#root {
+    /* #1 Form */
+    height: 100%;
+    width: 100%;
+    min-width: 1024px;
+    min-height: 768px;
+
+    /* #5 Child modifiers */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    /* #4 Self modifiers */
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.pending {
+    /* #4 Self modifiers */
+    background-color: #f39c12;
+}
+
+.processed {
+    /* #4 Self modifiers */
+    background-color: #10b981;
+}
+
+.archived {
+    /* #4 Self modifiers */
+    background-color: #5467f8;
+}

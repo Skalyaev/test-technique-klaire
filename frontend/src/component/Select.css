@@ -1,0 +1,81 @@
+/* ========================= */
+/* #1 Form                   */
+/* #2 Position               */
+/* #3 Margin & Padding       */
+/* #4 Self modifiers         */
+/* #5 Child modifiers        */
+/* #6 Text                   */
+/* #7 Animation              */
+/* ========================= */
+
+.select {
+    /* #1 Form */
+    height: 2rem;
+    border-radius: 4px;
+
+    /* #3 Margin & Padding */
+    padding: 0 0.75rem;
+
+    /* #4 Self modifiers */
+    cursor: pointer;
+
+    /* #5 Child modifiers */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    /* #6 Text */
+    color: white;
+}
+
+.select h5 {
+    /* #3 Margin & Padding */
+    margin: 0;
+}
+
+.select-options {
+    /* #1 Form */
+    width: 100%;
+    border-radius: 4px;
+
+    /* #2 Position */
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    z-index: 2;
+
+    /* #4 Self modifiers */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+    /* #5 Child modifiers */
+    display: flex;
+    flex-direction: column;
+
+    /* #6 Text */
+    color: #4b5563;
+}
+
+.select-options > div {
+    /* #3 Margin & Padding */
+    padding: 0.5rem 0.75rem;
+}
+
+.select-options > div:first-child {
+    /* #4 Self modifiers */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.select-options > div:last-child {
+    /* #4 Self modifiers */
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.select-options > div:hover {
+    /* #4 Self modifiers */
+    background-color: #f9f8ff;
+}

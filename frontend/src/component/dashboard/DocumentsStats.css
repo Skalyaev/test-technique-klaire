@@ -1,0 +1,63 @@
+/* ========================= */
+/* #1 Form                   */
+/* #2 Position               */
+/* #3 Margin & Padding       */
+/* #4 Self modifiers         */
+/* #5 Child modifiers        */
+/* #6 Text                   */
+/* #7 Animation              */
+/* ========================= */
+
+.documents-stats {
+    /* #1 Form */
+    width: 100%;
+    height: 5rem;
+
+    /* #4 Self modifiers */
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+
+    /* #5 Child modifiers */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.klaire-logo {
+    /* #1 Form */
+    height: 2rem;
+
+    /* #2 Position */
+    position: absolute;
+    left: 2rem;
+}
+
+.documents-stats .pending,
+.documents-stats .processed,
+.documents-stats .archived {
+    /* #1 Form */
+    width: 10rem;
+    height: 2rem;
+    border-radius: 4px;
+
+    /* #3 Margin & Padding */
+    padding: 0 1rem;
+
+    /* #4 Self modifiers */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    /* #5 Child modifiers */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* #6 Text */
+    color: white;
+}
+
+.documents-stats h5 {
+    /* #3 Margin & Padding */
+    margin: 0;
+}

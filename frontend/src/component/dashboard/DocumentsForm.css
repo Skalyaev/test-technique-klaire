@@ -1,0 +1,88 @@
+/* ========================= */
+/* #1 Form                   */
+/* #2 Position               */
+/* #3 Margin & Padding       */
+/* #4 Self modifiers         */
+/* #5 Child modifiers        */
+/* #6 Text                   */
+/* #7 Animation              */
+/* ========================= */
+
+.documents-form {
+    /* #1 Form */
+    width: 30rem;
+    height: 10rem;
+    border-radius: 4px;
+
+    /* #3 Margin & Padding */
+    margin-top: 3rem;
+
+    /* #4 Self modifiers */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+
+    /* #5 Child modifiers */
+    display: flex;
+    flex-direction: column;
+}
+
+.documents-form form {
+    /* #1 Form */
+    flex-grow: 1;
+
+    /* #5 Child modifiers */
+    display: flex;
+    flex-direction: column;
+}
+
+.documents-form h5 {
+    /* #3 Margin & Padding */
+    margin: 0.5rem 0.725rem;
+
+    /* #6 Text */
+    color: #4b5563;
+}
+
+.documents-form textarea {
+    /* #1 Form */
+    flex-grow: 1;
+
+    /* #3 Margin & Padding */
+    padding: 0 0.725rem;
+
+    /* #4 Self modifiers */
+    border: none;
+    resize: none;
+}
+
+.documents-form textarea:focus {
+    /* #4 Self modifiers */
+    outline: none;
+}
+
+.documents-form button {
+    /* #1 Form */
+    width: max-content;
+    height: 2.5rem;
+
+    /* #2 Position */
+    align-self: flex-end;
+
+    /* #3 Margin & Padding */
+    margin-right: 0.725rem;
+
+    /* #4 Self modifiers */
+    background-color: #ffffff00;
+    border: none;
+
+    /* #6 Text */
+    color: #b6b9bd;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+.documents-form button:not(:disabled) {
+    /* #4 Self modifiers */
+    color: #4b5563;
+    cursor: pointer;
+}

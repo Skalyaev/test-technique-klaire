@@ -1,0 +1,9 @@
+const config = {
+    arrowParens: 'avoid',
+    bracketSameLine: true,
+    tabWidth: 4,
+    trailingComma: 'none',
+    semi: false,
+    singleQuote: true
+}
+export default config
